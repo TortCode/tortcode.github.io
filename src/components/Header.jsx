@@ -1,18 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-
-function NavItem({ url, text }) {
-  return (
-    <div style={{
-      padding: '5px',
-    }}>
-      <NavLink to={url}>
-        {text}
-      </NavLink>
-    </div>
-  )
-}
-
 function Header() {
   return (
     <header 
@@ -24,9 +11,21 @@ function Header() {
       gap: '15px',
       height: '50px',
     }}>
-      <NavItem url='/' text='Home' />
-      <NavItem url='/resume' text='Resume' />
-      <NavItem url='/projects' text='Projects' />
+      <div style={{
+        padding: '5px',
+      }}>
+        <NavLink to='/'>Home</NavLink>
+      </div>
+      <div style={{
+        padding: '5px',
+      }}>
+        <a href="/resume.pdf" target="_blank">Resume</a>
+      </div>
+      <div style={{
+        padding: '5px',
+      }}>
+        <NavLink to='/projects'>Projects</NavLink>
+      </div>
     </header>
   )
 }
