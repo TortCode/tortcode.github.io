@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import resumePdf from '../assets/resume.pdf';
 
 function Header() {
   return (
@@ -19,7 +20,7 @@ function Header() {
       <div style={{
         padding: '5px',
       }}>
-        <a href="/resume.pdf" target="_blank">Resume</a>
+        <a href={resumePdf} target="_blank">Resume</a>
       </div>
       <div style={{
         padding: '5px',
