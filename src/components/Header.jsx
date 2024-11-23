@@ -4,13 +4,14 @@ import resumePdf from '../assets/resume.pdf';
 function Header() {
   return (
     <header 
-    className="roboto-medium"
+    className="weight-medium"
     style={{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       gap: '15px',
       height: '50px',
+      borderBottom: '1px solid #ddd',
     }}>
       <div style={{
         padding: '5px',
