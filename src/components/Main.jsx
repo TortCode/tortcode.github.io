@@ -4,8 +4,11 @@ function Main({ children }) {
     <main style={{
       flexGrow: 1,
       backgroundColor: '#eee',
+      padding: '20px',
       display: 'flex',
+      flexDirection: 'row',
       justifyContent: 'center',
+      alignItems: 'center',
     }}>
       {children}
     </main>
